@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags</title>
+    <style>
+        main {
+            width: 95%;
+            margin: 0 auto;
+            background-color: rgb(214, 228, 233);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0;
+            border: 1px solid blue;
+        }
+
+        header {
+            border: 1px solid;
+        }
+
+        header nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 3px 4px;
+            font-size: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+
+        }
+
+        div,
+        section {
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>
+            <marquee><u>HTML TRAINING</u></marquee>
+        </h1>
+        <div>
+
+            <h1>First Heading</h1>
+            <h2>Second Heading</h2>
+            <h3>Third Heading</h3>
+            <h4>Fourth Heading</h4>
+            <h5>Fifth Heading</h5>
+            <h6>Sixth Heading</h6>
+        </div>
+        <hr>
+        <section>
+            <p>This is a paragraph.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quos officiis reprehenderit saepe suscipit
+                odit blanditiis, doloribus consectetur ab repellat.</p>
+            <h2>HTML Formatting</h2>
+            <p>Lorem ipsum dolor <strong> amet consectetur adipisicing elit.</strong> Unde, necessitatibus!</p>
+            <p>Lorem ipsum dolor, <em> sit amet consectetur adipisicing elit.</em> Alias, unde.</p>
+            <p>Lorem ipsum dolor sit <mark> amet consectetur adipisicing elit.</mark> Magni, ipsam?</p>
+        </section>
+        <hr>
+
+        <section>
+            <u>
+                <h1 style="text-align:center;">Table</h1>
+            </u>
+            <table border="1" style="text-align:center; width: 400px;">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            City
+                        </th>
+                        <th>
+                            Profession
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ABC</td>
+                        <td>Mumbai</td>
+                        <td>Engineer</td>
+                    </tr>
+                    <tr>
+                        <td>DEF</td>
+                        <td>Delhi</td>
+                        <td>Professor</td>
+                    </tr>
+                    <tr>
+                        <td>GHI</td>
+                        <td>Bengaluru</td>
+                        <td>Doctor</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ</td>
+                        <td>Noida</td>
+                        <td>Lawyer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <u>
+                <h1 style="text-align:center;">Lists</h1>
+            </u>
+            <h2>Ordered List</h2>
+            <ol start="11">
+                <li>Tea</li>
+                <li>Coffee</li>
+                <li>Juice</li>
+                <li>Soft-Drink</li>
+            </ol>
+            <h2>Unordered List</h2>
+            <ul>
+                <li>Tea</li>
+                <li>Coffee</li>
+                <li>Juice</li>
+                <li>Soft-Drink</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <u>
+                <h1 style="text-align:center;">Form Elements</h1>
+            </u>
+            <form action="mailto:sharmaabhishek189302@gmail.com"
+                style="margin-bottom: 5px; padding: 5px; border: 1px solid red;">
+                <div>
+                    <label for="">Name:</label>
+                    <input type="text" placeholder="Name">
+
+                </div>
+                <div>
+                    <label for="">Password:</label>
+                    <input type="Password" placeholder="Password">
+                </div>
+                <div>
+                    <label for="">Mail Id:</label>
+                    <input type="email" placeholder="Mail">
+                </div>
+                <div>
+                    <label for="">Phone number:</label>
+                    <input type="tel" placeholder="Phone number">
+                </div>
+                <div>
+                    <label for="">Date:</label>
+                    <input type="date" placeholder="date">
+                </div>
+                <div>
+                    <label for="">Range:</label>
+                    <input type="range">
+                </div>
+                <div>
+                    <label for="">Search:</label>
+                    <input type="search">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
