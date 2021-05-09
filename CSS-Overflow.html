@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Overflow</title>
+    <style>
+        .item{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+            float: left;
+        }
+        #item-1{
+            overflow: hidden;
+        }
+        #item-2{
+            overflow: scroll;
+        }
+        #item-3{
+            overflow: auto;
+        }
+        #item-4{
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="item" id="item-1">
+        <h5>overflow-hidden</h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum cum vel eaque suscipit magni earum fuga quidem, commodi sunt, minus qui, nostrum quis veniam eos mollitia adipisci nisi laudantium similique? Voluptas, autem? Dolores excepturi ab ut esse facere ipsum blanditiis.</div>
+    <div class="item" id="item-2"> <h5>overflow-scroll</h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum cum vel eaque suscipit magni earum fuga quidem, commodi sunt, minus qui, nostrum quis veniam eos mollitia adipisci nisi laudantium similique? Voluptas, autem? Dolores excepturi ab ut esse facere ipsum blanditiis.</div>
+    <div class="item" id="item-3"> <h5>overflow-auto</h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum cum vel eaque suscipit magni earum fuga quidem, commodi sunt, minus qui, nostrum quis veniam eos mollitia adipisci nisi laudantium similique? Voluptas, autem? Dolores excepturi ab ut esse facere ipsum blanditiis.</div>
+    <div class="item" id="item-4"> <h5>overflow-y-hidden</h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum cum vel eaque suscipit magni earum fuga quidem, commodi sunt, minus qui, nostrum quis veniam eos mollitia adipisci nisi laudantium similique? Voluptas, autem? Dolores excepturi ab ut esse facere ipsum blanditiis.</div>
+    
+</body>
+</html>
