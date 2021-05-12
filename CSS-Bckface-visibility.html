@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backface-visibility</title>
+    <style>
+        .parent{
+            width: 300px;
+            height: 300px;
+            background-color: lightgreen;
+            perspective: 800px;
+            backface-visibility: hidden;
+            position: absolute;
+            margin: 100px 0 0 100px;
+            /* border: 1px solid; */
+            
+        }
+        .child{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: green;
+            transform: all 2s;
+            transition: 1s;
+            /* transform-style: preserve-3d; */
+        }
+        .front,.back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+           background-color: white;
+           color: tomato;
+           backface-visibility: hidden;
+           font-size: 60px;
+           text-align: center;
+           line-height: 300px;
+           border-radius: 5px;
+        }
+        .back{
+            background-color: turquoise;
+            color: blue;
+            transform: rotateX(180deg);
+            
+        }
+        .parent:hover .child{
+transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="front">FRONT</div>
+        <div class="back">BACK</div></div>
+    </div>
+</body>
+</html>

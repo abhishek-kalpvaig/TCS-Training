@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .box-1,.box-2,.box-3,.box-4{
+            width: 1000px;
+            height: 400px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+        h1{
+            text-align: center;
+            font-size: 70px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .box-1{
+         background: linear-gradient(45deg, red,green ,blue ,orange ,khaki ,skyblue );
+        }
+        .box-2{
+         background: radial-gradient(red,green ,blue ,orange ,khaki ,skyblue );
+        }
+        .box-3{
+         background:repeating-linear-gradient(to right,red,green ,blue ,orange ,khaki ,skyblue );
+        }
+        .box-4{
+         background:repeating-radial-gradient(red,green ,blue ,orange ,khaki ,skyblue,yellow,pink,magenta,yellowgreen);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box-1"><h1>Linear Gradient</h1></div>
+    <div class="box-2"><h1>Radial Gradient</h1></div>
+    <div class="box-3"><h1>Repeated Linear Gradient</h1></div>
+    <div class="box-4"><h1>Repeated Radial Gradient</h1></div>
+</body>
+</html>

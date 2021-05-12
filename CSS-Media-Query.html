@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vw;
+            text-align: center;
+            padding: 5%;
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color: khaki;
+        }
+        @media screen and (max-width:1200px) {
+            .container{
+                background-color: olivedrab;
+                font-size: 70px;
+            }
+            
+            
+        }
+        @media screen and (max-width:900px) {
+            .container{
+                background-color: yellowgreen;
+                font-size: 50px;
+                color: darkgreen;
+            }
+            
+            
+        }
+        @media screen and (max-width:900px) {
+            .container{
+                background-color: orangered;
+                font-size: 30px;
+                color: yellow;
+            }
+            
+            
+        }
+        @media screen and (max-width:700px) {
+            .container{
+                background-color: turquoise;
+                font-size: 25px;
+            }
+            
+            
+        }
+        @media screen and (max-width:550px) {
+            .container{
+                background-color: blue;
+                color: white;
+                font-size: 25px;
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>This is a Heading.</h1>
+        <p>This is a Paragraph.</p>
+    </div>
+</body>
+</html>

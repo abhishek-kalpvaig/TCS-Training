@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Varialbles</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --main-color:red;
+            --secondary-color:orange;
+            
+        }
+        .container{
+           
+            width: 90vw;
+            height: 90vh;
+            background-color: var(--secondary-color);
+            border: 1px solid red;
+            outline: 4px solid red;
+            outline-offset: 5px;
+            margin: 10px;
+        }
+        h1{
+            font-size: 100px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: var(--main-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a Heading.</h1>
+    </div>
+</body>
+</html>

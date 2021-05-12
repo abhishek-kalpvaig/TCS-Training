@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+.container{
+    width:90% ;
+    background-color: khaki;
+   
+    border: 1px solid;
+    padding: 20px;
+    margin: auto;
+    padding: 0;
+}
+#header{
+    background-color:tomato;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+h2{
+    font-size: 28px;
+}
+.navbar{
+    background-color: crimson;
+}
+.navbar ul li{
+    display:inline-block;
+    text-align: center;
+    list-style-type: none;
+}
+.navbar ul li a{
+    display:inline-block;
+    width: 150px;
+    padding: 15px;
+   text-decoration: none;
+   color: black;
+}
+.navbar ul li a:hover{
+    background-color: red;
+   
+    color: white;
+}
+.content{
+    padding: 20px;
+    width: 65%;
+    float: left;
+    min-height: 400px;
+
+}
+.content h2,p{
+    margin: 10px;
+}
+aside{
+    padding: 20px 50px;
+    width: 35%;
+    float: right;
+    min-height: 400px;
+    background-color: skyblue;
+    line-height: 2;
+}
+aside ul li a{
+    text-decoration: none;
+    color: black;
+}
+aside ul li a:hover{
+    background-color: blue;
+    color: white;
+}
+#footer{
+    background-color: crimson;
+    text-align: center;
+    clear: both;
+    padding: 20px 40px;
+    margin: 0;
+    font-weight: 700;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <h1>Tata Consultancy Services</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <h2>Basic Layout design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores autem itaque, nisi animi ducimus aperiam praesentium, quos, nesciunt necessitatibus accusantium dolorum possimus dignissimos. Cum similique officia, non ut quod quas adipisci ad! Quia corrupti molestiae modi, voluptates sapiente voluptatibus eveniet labore error, animi ab, consequuntur praesentium perferendis incidunt velit adipisci! Aperiam accusamus eos fugiat necessitatibus ut quis, officiis vitae voluptates ipsam atque eveniet placeat quos, incidunt maiores? Nulla ab quas molestias veniam eligendi? Fugiat facilis eos quod laboriosam, reprehenderit neque laudantium corporis nam enim, porro expedita, reiciendis amet! Quo architecto, placeat velit eveniet laboriosam illo? Vitae hic ratione sit distinctio?</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum optio aliquid fuga consequatur beatae, quam, perspiciatis eaque eos ullam laborum ea voluptatum sapiente quaerat soluta? Minus ea sequi quos corrupti neque sit omnis voluptas. Pariatur cupiditate quo aliquam eligendi soluta quas sunt assumenda saepe modi quibusdam. Consequuntur, iste quia! Molestias in tenetur ea molestiae quibusdam corporis sequi placeat sint provident voluptatum, nam dolorum amet, quam exercitationem debitis magni incidunt! Nam quidem beatae aperiam neque? Consectetur voluptate tenetur quidem asperiores sequi nobis modi pariatur assumenda blanditiis minus eligendi consequuntur quae vero ea, tempora quisquam optio reiciendis iure alias maxime itaque! Omnis?
+            </p>
+        </section>
+
+        <aside>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </aside>
+<footer id="footer">
+    TCS@copyright 2021.
+</footer>
+    </div>
+    
+</body>
+</html>

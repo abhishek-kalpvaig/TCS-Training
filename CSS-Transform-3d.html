@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Transform</title>
+    <style>
+        .item{
+width: 300px;
+height: 300px;
+margin: auto;
+border: 1px solid black;
+transform-style: preserve-3d;
+/* float: left; */
+margin: 10px;
+text-align: center;
+background-color: lightgrey;
+margin-top: 100px;
+
+        }
+        #item-1{
+            width: 300px;
+height: 300px;
+            background-color: orange;
+            
+            transform:perspective(800px) rotateX(60deg);
+        }
+    
+        #item-2{
+            width: 300px;
+            height: 300px;
+            background-color: lightseagreen;
+            
+            transform:perspective(800px) rotateY(60deg);
+        }
+        #item-3{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            
+            transform:perspective(800px) rotateZ(60deg);
+        }
+        #item-4{
+            width: 300px;
+            height: 300px;
+            background-color: yellowgreen;
+            
+            transform:perspective(800px) rotateX(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item">
+        <div id="item-1"><h1>rotateX</h1></div>
+    </div>
+    <div class="item">
+        <div id="item-2"><h2>rotateY</h2></div>
+    </div>
+    <div class="item">
+        <div id="item-3">rotateZ</div>
+    </div>
+    <div class="item">
+        <div id="item-4">rotateX</div>
+    </div>
+</body>
+</html>

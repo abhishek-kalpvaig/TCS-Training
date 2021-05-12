@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position and z-index</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 600px;
+            background-color: tomato;
+            border: 2px solid;
+            margin: auto;
+            text-align: center;
+            font-size: 35px;
+            position: relative;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            position: absolute;
+        }
+        #box-1{
+            background-color: skyblue;
+            top: 50px;
+            left: 50px;
+
+        }
+        #box-2{
+            background-color: orange;
+            top: 150px;
+            left: 150px;
+            z-index: 1;
+
+        }
+        #box-3{
+            background-color: lightgreen;
+            top: 250px;
+            left: 250px;
+           
+
+        }
+        #box-4{
+            background-color: cyan;
+            top: 350px;
+            left: 350px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1"><h1>A</h1></div>
+        <div class="box" id="box-2"><h1>B</h1></div>
+        <div class="box" id="box-3"><h1>C</h1></div>
+        <div class="box" id="box-4"><h1>D</h1></div>
+    </div>
+</body>
+</html>
