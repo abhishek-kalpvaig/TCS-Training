@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h1>String Methods
+    </h1>
+    <script>
+
+        var myStr="Javascript is                a GREAT Language and is used for scripting.";
+        document.write(myStr+"<br><br>");
+        var a=myStr.toUpperCase();
+        document.write(a+"<br><br>");//Covert to Upper Case
+        var b=myStr.toLowerCase();
+        document.write(b+"<br><br>");//Covert to lower Case
+        var c=myStr.includes("is");
+        document.write(c+"<br><br>");// check a character 
+        var d=myStr.charAt(20);
+        document.write(d+"<br><br>");// check same character and gives an arrray of that character
+        var e=myStr.match("is");
+        document.write(e+"<br><br>");//search a character
+        var e=myStr.search("is");
+        document.write(e+"<br><br>");
+        var e=myStr.indexOf("GREAT");// find index number
+        document.write(e+"<br><br>");
+        var e=myStr.lastIndexOf("is");
+        document.write(e+"<br><br>");
+
+        var e=myStr.replace("is","are");
+        document.write(e+"<br><br>");
+        var e=myStr.charCodeAt("20");
+        document.write(e+"<br><br>");
+
+
+        var e=myStr.trim();
+        document.write(e+"<br><br>");
+
+        var e=myStr.substr(3,5);
+        document.write(e+"<br><br>");
+
+        var e=myStr.substring(3,5);
+        document.write(e+"<br><br>");
+
+        var e=myStr.valueOf();
+        document.write(e+"<br><br>");
+
+var str2="           java           is          a            language";
+
+        document.write(str2+"<br><br>");
+
+    </script>
+</body>
+</html>

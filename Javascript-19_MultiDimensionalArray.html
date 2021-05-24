@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Dimensional Array</title>
+    <style>
+        table
+        {
+            min-width: 500px;
+            text-align: center;
+            margin: auto;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        document.write("<table border='1px' cellspacing='0' >");
+        var studentData=[
+            ["Abhishek",18,"Male","B.tech"],
+            ["Tom",19,"Male","M.tech"],
+            ["John",21,"Male","B.com"],
+            ["Anna",18,"Female","Bsc"]
+        ];
+        delete studentData[1][2];
+        for(var a=0;a<4;a++)
+        {
+            document.write("<tr>");
+            for(var b=0;b<4;b++)
+            document.write("<td>"+studentData[a][b]+"</td>");
+             document.write("</tr>");
+        }
+        
+         document.write("</table>");
+
+       
+
+    </script>
+    
+</body>
+</html>
