@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversal Methods</title>
+    <style>
+        #outer{
+            width: 1000px;
+            height: 400px;
+            margin: auto;
+            background-color: tomato;
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #outer h2{
+            color: white;
+        }
+        #inner h2{
+            color:blue;
+        }
+        #inner
+        {
+            background-color: orange;
+            display: flex;
+            height: 200px;
+            border: 1px solid red;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #inner div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            font-weight: bold;
+            line-height: 100px;
+            text-align: center;
+          
+            margin: 10px;
+            background-color: rgb(107, 204, 194);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="outer">
+        <h2 >Outer</h2>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+    </div>
+    <script>
+
+        var a=document.querySelector("#inner div").parentElement.style.backgroundColor="blue";
+        var a=document.querySelector("#outer").parentElement.style.backgroundColor="skyblue";
+        var a=document.querySelector("#inner").parentElement.style.backgroundColor="khaki";
+        var a=document.querySelector("#inner").parentElement.style.backgroundColor="blue";
+        var a=document.querySelector("#inner").children[0].style.backgroundColor="black";
+        var a=document.querySelector("#inner").children[2].style.backgroundColor="green";
+        var a=document.querySelector("#inner").children[3].style.backgroundColor="yellow";
+        var a=document.querySelector("#inner").children[4].style.backgroundColor="tan";
+        var a=document.querySelector("#inner").children[5].style.backgroundColor="green";
+        var a=document.querySelector("#inner").firstElementChild.style.backgroundColor="red";
+        var a=document.querySelector("#inner").lastElementChild.style.backgroundColor="red";
+    
+
+        var a=document.querySelector("#outer").firstElementChild;
+        console.log(a + "<br>");
+    </script>
+</body>
+</html>

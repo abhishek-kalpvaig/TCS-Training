@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clone node</title>
+    <style>
+        
+        ul{
+            background-color: khaki;
+            border: 1px solid;
+            padding: 2% 1%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clone node and replacechild and remove child</h1>
+    <ul id="li-1">
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Water Melon</li>
+        <li>Pineapple</li>
+    </ul>
+    
+
+    <ul id="li-2">
+        <li>Guava</li>
+        <li>Banana</li>
+        <li>Kiwi</li>
+        <li>Coconut</li>
+    </ul>
+
+
+    <script>
+
+        var a=document.getElementById("li-1").children[1];
+       
+        var b=a.cloneNode(true);
+
+
+        var c=document.getElementById("li-2").appendChild(b);
+        console.log(c);
+        document.getElementById("li-1").removeChild(a);//to remove child
+    </script>
+</body>
+</html>

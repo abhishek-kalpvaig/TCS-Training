@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .abc {
+            width: 100%;
+            background-color: orange;
+            color: white;
+            height: 50px;
+            padding: 1%;
+            text-align: center;
+        }
+
+        .xyz {
+            width: 100%;
+            background-color: skyblue;
+            color: blue;
+            height: 50px;
+            padding: 1%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="Heading1" class="abc" style="border: 2px solid black;">This is a Heading.</h1>
+    <p>This is a Paragraph.</p>
+    <ul class="list">
+        <li><a href="#">ONE</a></li>
+        <li><a href="#">TWO</a></li>
+        <li><a href="#">THREE</a></li>
+        <li><a href="#">FOUR</a></li>
+    </ul>
+    <button onclick="myfunction()">Click Me !</button>
+    <script>
+
+
+        var a = document.getElementById("Heading1").innerText;
+        document.write(a + "<br>");
+        var a = document.getElementById("Heading1").innerHTML;
+        document.write(a + "<br>");
+
+        var a = document.getElementById("Heading1").getAttribute("class");
+        document.write(a + "<br>");
+
+        var a = document.getElementById("Heading1").getAttribute("style");
+        document.write(a + "<br>");
+        var b = document.getElementById("Heading1").removeAttribute("class");
+
+       var x= document.querySelector("ul").classList.remove("abc");
+        console.log(x);
+
+        function myfunction(){
+            document.querySelectorAll("p")[0].style.color="red";
+        }
+
+    </script>
+</body>
+
+</html>

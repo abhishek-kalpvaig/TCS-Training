@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Event Listener</title>
+    <style>
+            .abc {
+            width: 100%;
+            background-color: orange;
+            color: white;
+            height: 50px;
+            padding: 1%;
+            text-align: center;
+        }
+
+        .xyz {
+            width: 100%;
+            background-color: skyblue;
+            color: blue;
+            height: 50px;
+            padding: 1%;
+            text-align: center;
+        }
+        ul li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        p,ul{
+            background-color: tomato;
+            padding: 2%;
+            font-size: 30px;
+        }
+        .random{
+            background-color: yellow;
+            border: 4px solid green;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    
+    <h1 id="Heading1" class="abc" style="border: 2px solid black;">Click on Me.</h1>
+    <p>Hover Mouse on Me !!!</p>
+    <ul class="list">
+        Hover Mouse on Me !!!
+        <li><a href="#">ONE</a></li>
+        <li><a href="#">TWO</a></li>
+        <li><a href="#">THREE</a></li>
+        <li><a href="#">FOUR</a></li>
+    </ul>
+    <button onclick="myfunction()">Click Me !</button>
+
+    <script>
+        document.querySelector("h1").addEventListener("click", function(){
+            this.style.color="red";
+            this.style.fontSize="45px";
+        });
+
+
+        document.querySelector("p").addEventListener("mouseenter", function(){
+            this.setAttribute("class","random");
+        });
+
+
+        document.querySelector("ul").addEventListener("mouseenter", function(){
+            this.setAttribute("class","random ");
+        });
+
+        function myfunction(){
+            alert("Welcome to Javascript");
+        }
+    </script>
+</body>
+</html>

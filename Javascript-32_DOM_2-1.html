@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+   <style>
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       .box,#demo{
+           width: 100%;
+           height: 200px;
+           background-color: tan;
+           border: 1px solid red;
+       }
+   </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Create Elements , Create text and insert text and element to our page.</h1>
+
+<div class="box"></div>
+<div id="demo"></div>
+    <script>
+var newTag=document.createElement("h1");
+var newText=document.createTextNode("This is a Heading");
+newTag.appendChild(newText);
+document.getElementsByClassName("box")[0].appendChild(newTag);
+
+var newTag=document.createElement("p");
+var newText=document.createTextNode("This is a ParaGraph");
+newTag.appendChild(newText);
+
+document.getElementsByClassName("box")[0].insertBefore(newTag,document.getElementsByClassName("box")[0].childNodes[0]);
+
+
+var x="<h3>This is heading Three.</h3>";
+    var y=document.getElementById("demo");
+    y.insertAdjacentHTML("afterbegin", x);
+
+
+    var z="This is some other text";
+
+    y.insertAdjacentText("beforebegin",z);
+
+
+    var l= "<ul> <li>ONE</li> <li>TWO</li><li>THREE</li>              </ul>";
+    y.insertAdjacentHTML("afterbegin",l);
+    </script>
+</body>
+</html>
