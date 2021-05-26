@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInteval and ClearInterval</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+        #box{
+            /* margin: auto; */
+            background-color: turquoise;
+            border: 2px solid;
+            width: 200px;
+            height: 200px;
+          
+        }
+        
+            
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="box"></div>
+    <script>
+        var a=40;
+      var x=  setInterval(animate,200);
+        //  anim=document.getElementById("box");
+        function animate(){
+            a=a+20;
+            anim=document.getElementById("box");
+      if (a==400) {
+          clearInterval(x);
+          
+      } else {
+          
+        
+            anim.style.width=a+ "px";
+        }
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+    <style>
+        .container {
+            width: 800px;
+            /* height: 400px; */
+            background-color: rgb(208, 223, 236);
+            margin: auto;
+            border: 3px solid green;
+            margin-top: 2%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            width: 50%;
+            padding: 2%;
+            height: 250px;
+            margin: auto;
+            border: 1px solid blue;
+
+        }
+
+        form input {
+            margin: 1%;
+
+        }
+
+        input[type="submit"] {
+            width: 200px;
+            background-color: black;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: yellowgreen;
+            color: black;
+        }
+
+        #data {
+            min-width: 50%;
+            padding: 2%;
+            background-color: tomato;
+            height: 50px;
+            text-align: center;
+            margin: auto;
+            border: 2px dotted;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <form action="" onsubmit="submitFunction()">
+
+            <div> <label for=""> <strong> Name:</strong></label><input type="text" id="name"
+                    oninput="dataFunction(this)" onfocus="focusFunction(this)" onblur="blurFunction(this)"></div>
+            <div> <label for=""><strong>Number:</strong></label><input type="tel" id="phone"
+                    onfocus="focusFunction(this)" onblur="blurFunction(this)"></div>
+            <div> <label for=""><strong>Password:</strong></label><input type="password" id="pass"
+                    onfocus="focusFunction(this)" onblur="blurFunction(this)"></div>
+            <div> <label for=""><strong>Email Id:</strong></label><input type="email" id="mail"
+                    onfocus="focusFunction(this)" onblur="blurFunction(this)"></div>
+            <div> <strong>Select Country:<select name="" id="select" onfocus="focusFunction(this)"
+                        onblur="blurFunction(this)">
+                        <option value="India">India</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="America">America</option>
+                    </select>
+                </strong></label>
+            </div>
+            <div><input type="submit"></div>
+
+
+        </form>
+        <div id="data"></div>
+    </main>
+    <script>
+        function focusFunction(a) {
+            a.style.backgroundColor = "lightgreen";
+        }
+        function blurFunction(a) {
+            a.style.backgroundColor = "";
+        }
+        function dataFunction(a) {
+            document.getElementById("data").innerHTML = a.value;
+        }
+        function submitFunction() {
+            alert("Data Submitted Successfully");
+        }
+
+
+
+
+                // var a=document.getElementById("name");
+                // document.getElementById("data").innerHTML=a.value;
+    </script>
+
+
+</body>
+
+</html>
