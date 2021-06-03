@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+    <style>
+        h1{
+            background-color: skyblue;
+            color: red;
+            font-family: monospace;
+            font-size: 30px;
+            padding: 1% ;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+   
+    <script>
+
+        var arr1=[10,20,30,40,50];
+        document.write(arr1+"<br>");
+
+        var arr2=[60,70,80,90,100];
+        document.write(arr2+"<br>");
+
+        var arr3=[...arr1 , ...arr2];
+        document.write("Array three obtained by using spread operator is :" +arr3+"<br>");
+
+        obj1={
+            name:"abhishek",
+            age:28,
+            profeesion:"engineer"
+        };
+
+        obj2={
+            name:"anurag",
+            age:26,
+            profeesion:"teacher"
+        };
+
+       console.log(obj1);
+var obj3={...obj1,...obj2};
+
+console.log(obj3);
+    </script>
+
+</body>
+</html>
