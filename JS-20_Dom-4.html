@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        table {
+            width: 800px;
+            border: 1px solid;
+            padding: 2% 0;
+
+
+        }
+        .myclass{
+            background-color: lightcoral;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: darkblue;
+        }
+
+        label {
+            font-size: 30px;
+        }
+
+        input {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="myform" onsubmit="getData()">
+
+        <table  id="myTable">
+
+            <tr>
+                <td><label for="">NAME:</label></td>
+                <td><input type="text" placeholder="Name"></td>
+
+            </tr>
+            <tr>
+                <td> <label for="">PASSWORD:</label></td>
+                <td><input type="password" placeholder="Password"></td>
+
+            </tr>
+            <tr>
+                <td><label for="">NUMBER:</label></td>
+                <td><input type="tel" placeholder="Phone Number"></td>
+
+            </tr>
+            <tr>
+                <td><label for="">MAIL ID:</label></td>
+                <td><input type="email" placeholder="Mail Id"></td>
+
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+
+            </tr>
+
+
+        </table>
+    </form>
+
+
+    <script>
+        function getData() {
+            var inputLenght = document.querySelectorAll("input").length;
+            for (var i = 0; i < inputLenght; i++) {
+                var a = document.querySelectorAll("input")[i].value;//Why i am not getting data as an array ?
+
+
+                document.write(a + "<br>");
+            }
+
+        }
+        document.getElementsById("myform").classList.add("myClass");//Why Class is not Adding Here  ?
+    </script>
+
+</body>
+
+</html>

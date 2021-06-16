@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .titleClass {
+            background-color: skyblue;
+            color: blue;
+            font-weight: bold;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .buttonClass {
+            background-color: blue;
+            color: white;
+            padding: 1%;
+            font-size: 25px;
+            border: 2px solid white;
+        }
+
+        button {
+            margin: 20px;
+        }
+        .huge{
+            font-size: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Hello Abhishek, This is Javascript.</h1>
+    <input type="checkbox"><button class="btn" onclick="document.getElementById('title').style.fontSize='55px'">Click Me !</button>
+    <ul id="list">
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li>Second</li>
+        <li>Third</li>
+    </ul>
+    <button onclick="document.querySelector('#title').classList.add('titleClass')">Click Here !</button>
+    <button onclick="document.getElementById('title').innerText='Welcome to World of Programming.'">Click Here !</button>
+    <button onclick="document.getElementById('title').style.background='tomato'">Click Here !</button>
+    <button onclick="document.querySelector('input').click()">Click Here !</button>
+    <button onclick="document.querySelector('#title').classList.toggle('huge')">Click ME !</button>
+    <script>
+        for (var i = 0; i < 6; i++) {
+            document.querySelectorAll("button")[i].classList.add("buttonClass");
+        }
+
+
+
+        for (var i = 0; i < document.getElementsByTagName("li").length; i++)
+        {
+            document.getElementsByTagName("li")[i].style.color = "Red";
+        }
+        document.getElementsByClassName("btn")[0].style.background="yellow";
+        document.getElementsByClassName("btn")[0].style.color="green";
+        var href=document.querySelector("h1").setAttribute("id","title-1");
+        document.querySelector("li a").setAttribute("href","https://www.facebbok.com/")
+        
+    </script>
+
+</body>
+
+</html>
